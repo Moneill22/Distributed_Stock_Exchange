@@ -3,12 +3,17 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Trader {
 
+	//Balance of currency trader has available to buy stock
 	double balance;
 
+	//Map of stock holdings a trader, groups together by stock ticker.
 	HashMap<String, List<Stock>> holdings = new HashMap<>();
 
 	public Trader(double bal){
 		balance = bal;
+
+		//For testing, traders will begin with random amounts of unique stocks.
+		//Stocks are created here and saved in the traders holdings map.
 
 		List<Stock> abc = new ArrayList<>();
 		int count1 = ThreadLocalRandom.current().nextInt(0,20);
