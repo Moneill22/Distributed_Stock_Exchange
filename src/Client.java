@@ -1,6 +1,10 @@
+package src;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+
+import src.Objects.Trader;
+import src.Objects.Transaction;
 
 class Client {
     public static void main(String[] args) {

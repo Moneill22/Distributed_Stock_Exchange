@@ -1,8 +1,10 @@
+package src.Objects;
+
 public class Transaction {
 	//Transaction object to pass Trader object and order over a socket.
 
-	Trader trader;
-	String transaction;
+	public Trader trader;
+	public String transaction;
 
 	public Transaction(Trader t, String tx){
 		trader = t;

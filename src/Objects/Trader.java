@@ -1,15 +1,16 @@
+package src.Objects;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Trader {
 
 	//Balance of currency trader has available to buy stock
-	double balance;
+	public int balance;
 
 	//Map of stock holdings a trader, groups together by stock ticker.
-	HashMap<String, List<Stock>> holdings = new HashMap<>();
+	public HashMap<String, List<Stock>> holdings = new HashMap<>();
 
-	public Trader(double bal){
+	public Trader(int bal){
 		balance = bal;
 
 		//For testing, traders will begin with random amounts of unique stocks.
