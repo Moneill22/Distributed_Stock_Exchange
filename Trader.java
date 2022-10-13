@@ -45,5 +45,12 @@ public class Trader {
 
 	}
 
+	public void holdingsOverview(){
+		System.out.println("Current Holdings");
+		System.out.println("ABC: "+ holdings.get("ABC")+ " shares");
+		System.out.println("DEF: "+ holdings.get("DEF")+ " shares");
+		System.out.println("XYZ: "+ holdings.get("XYZ")+ " shares");
+	}
+
 	
 }
